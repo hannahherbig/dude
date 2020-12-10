@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "du.py"
+version = "0.1.0"
+description = "tool similar to du but a little fancier i guess"
+authors = ["Andrew Herbig <notandrewherbig@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/andrew12/du.py"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+humanize = "^3.1.0"
+tabulate = "^0.8.7"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.9.3"
+isort = "^5.6.4"
+black = "^20.8b1"
+
+[tool.poetry.scripts]
+"du.py" = "du"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

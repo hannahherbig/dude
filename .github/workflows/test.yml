@@ -1,0 +1,16 @@
+name: test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: abatilo/actions-poetry@v2.0.0
+      - run: poetry install
+      - run: poetry run du.py
