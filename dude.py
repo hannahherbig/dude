@@ -1,6 +1,7 @@
 from argparse import ArgumentParser
 from collections import defaultdict
 from pathlib import Path
+from stat import S_ISDIR
 
 from humanize import naturalsize
 from tabulate import tabulate
@@ -10,14 +11,15 @@ def walk(top: Path, sizes=None):
     if sizes is None:
         sizes = defaultdict(int)
     try:
-        size = top.lstat().st_size
+        st = top.lstat()
+        size = st.st_size
         sizes[top] += size
         for parent in top.parents:
             sizes[parent] += size
-        if top.is_dir():
+        if S_ISDIR(st.st_mode):
             for child in top.iterdir():
                 walk(child, sizes)
-    except FileNotFoundError:  # pragma: no cover
+    except (FileNotFoundError, PermissionError):  # pragma: no cover
         pass
     return sizes
 

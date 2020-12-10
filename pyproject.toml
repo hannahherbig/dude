@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dude"
-version = "0.1.1"
+version = "0.1.2"
 description = "tool similar to du but a little fancier i guess"
 authors = ["Andrew Herbig <notandrewherbig@gmail.com>"]
 license = "MIT"
