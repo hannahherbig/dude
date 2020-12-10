@@ -1,2 +1,6 @@
+.coverage
 .vscode
+__pycache__
+coverage.xml
 dist
+htmlcov
