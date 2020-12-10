@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "du.py"
+name = "dupy"
 version = "0.1.0"
 description = "tool similar to du but a little fancier i guess"
 authors = ["Andrew Herbig <notandrewherbig@gmail.com>"]
@@ -11,14 +11,13 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
 ]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 humanize = "^3.1.0"
 tabulate = "^0.8.7"
 
@@ -28,7 +27,7 @@ isort = "^5.6.4"
 black = "^20.8b1"
 
 [tool.poetry.scripts]
-"du.py" = "du"
+dupy = "dupy"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
