@@ -10,7 +10,7 @@ def walk(top: Path, sizes=None):
     if sizes is None:
         sizes = defaultdict(int)
     try:
-        size = top.stat().st_size
+        size = top.lstat().st_size
         sizes[top] += size
         for parent in top.parents:
             sizes[parent] += size
