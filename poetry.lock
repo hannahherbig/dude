@@ -74,7 +74,7 @@ python-versions = "*"
 
 [[package]]
 name = "humanize"
-version = "3.4.1"
+version = "3.5.0"
 description = "Python humanize utilities"
 category = "main"
 optional = false
@@ -338,8 +338,8 @@ filelock = [
     {file = "filelock-3.0.12.tar.gz", hash = "sha256:18d82244ee114f543149c66a6e0c14e9c4f8a1044b5cdaadd0f82159d6a6ff59"},
 ]
 humanize = [
-    {file = "humanize-3.4.1-py3-none-any.whl", hash = "sha256:c2ccaea7f8cbcd883ec420279d6e71ad20371bb36dbf5100b178d9756563289e"},
-    {file = "humanize-3.4.1.tar.gz", hash = "sha256:6e04cdd75d66074c34ff93c30a2ad6d19d91202a65c1bd400b2edeedae399bda"},
+    {file = "humanize-3.5.0-py3-none-any.whl", hash = "sha256:f584919f691ecfb67036a8639f2ac3d578f5f9073fb4cfd370a4cdf9f66aed78"},
+    {file = "humanize-3.5.0.tar.gz", hash = "sha256:a0474226e1494923f9106758e11f0c3bb4dbe5e7d84388fa78f90eb7713b5d65"},
 ]
 identify = [
     {file = "identify-1.5.10-py2.py3-none-any.whl", hash = "sha256:cc86e6a9a390879dcc2976cef169dd9cc48843ed70b7380f321d1b118163c60e"},
