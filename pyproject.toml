@@ -24,7 +24,7 @@ tabulate = "^0.8.7"
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.12.1"
 isort = "^5.8.0"
-black = "^21.4b0"
+black = "^21.4b2"
 coverage = "^5.5"
 
 [tool.poetry.scripts]
