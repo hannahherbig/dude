@@ -16,7 +16,7 @@ jobs:
       - run: poetry install
       - run: poetry run coverage run --source=dude -m dude
       - run: poetry run coverage xml
-      - uses: codecov/codecov-action@v2.0.2
+      - uses: codecov/codecov-action@v3.0.0
       - run: poetry build
       - uses: actions/upload-artifact@v2
         with:
