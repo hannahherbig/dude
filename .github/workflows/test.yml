@@ -18,7 +18,7 @@ jobs:
       - run: poetry run coverage xml
       - uses: codecov/codecov-action@v3.1.1
       - run: poetry build
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: dist
           path: dist/
