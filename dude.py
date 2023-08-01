@@ -32,7 +32,9 @@ def main():
 
     sizes = walk(args.top)
     table = []
-    for path, size in sorted(sizes.items(), key=lambda v: (v[1], v[0])):
+    for path, size in sorted(
+        sizes.items(), key=lambda v: (v[1], -len(v[0].parents), v[0])
+    ):
         if args.top in path.parents or args.top == path:
             end = "/" if path.is_dir() and not path.as_posix().endswith("/") else ""
             table.append(
