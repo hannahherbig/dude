@@ -7,7 +7,7 @@ from humanize import naturalsize
 from tabulate import tabulate
 
 
-def walk(top: Path, sizes=None):
+def walk(top: Path, sizes: defaultdict[Path, int] | None = None):
     if sizes is None:
         sizes = defaultdict(int)
     try:
@@ -31,7 +31,7 @@ def main():
     args = parser.parse_args()
 
     sizes = walk(args.top)
-    table = []
+    table: list[tuple[str, str, str]] = []
     for path, size in sorted(
         sizes.items(), key=lambda v: (v[1], -len(v[0].parents), v[0])
     ):

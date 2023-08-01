@@ -4,6 +4,11 @@ repos:
     hooks:
       - id: file-contents-sorter
         files: ^\.gitignore$
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.10.1
+    hooks:
+      - id: pyupgrade
+        args: [--py310-plus]
   - repo: https://github.com/PyCQA/isort
     rev: 5.12.0
     hooks:
