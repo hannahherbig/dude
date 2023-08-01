@@ -352,17 +352,6 @@ files = [
 ]
 
 [[package]]
-name = "types-tabulate"
-version = "0.9.0.3"
-description = "Typing stubs for tabulate"
-optional = false
-python-versions = "*"
-files = [
-    {file = "types-tabulate-0.9.0.3.tar.gz", hash = "sha256:197651f9d6467193cd166d8500116a6d3a26f2a4eb2db093bc9535ee1c0be55e"},
-    {file = "types_tabulate-0.9.0.3-py3-none-any.whl", hash = "sha256:462d1b62e01728416e8277614d6a3eb172d53a8efaf04a04a973ff2dd45238f6"},
-]
-
-[[package]]
 name = "virtualenv"
 version = "20.21.0"
 description = "Virtual Python Environment builder"
@@ -385,4 +374,4 @@ test = ["covdefaults (>=2.2.2)", "coverage (>=7.1)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "896182214eaa9d49884c5c0e97f4f685a106864b903cda0cd9186ee9e9c49741"
+content-hash = "bffd1d094094e4cf68805c0cbf3789912d70dff05ec243c52bd2f8d6164ca811"
