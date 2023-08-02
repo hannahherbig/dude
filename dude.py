@@ -32,9 +32,11 @@ def main():
 
     sizes = walk(args.top)
     table: list[tuple[str, str, str]] = []
-    for path, size in sorted(
-        sizes.items(), key=lambda v: (v[1], -len(v[0].parents), v[0])
-    ):
+
+    def key(v: tuple[Path, int]):
+        return v[1], -len(v[0].parents), v[0]
+
+    for path, size in sorted(sizes.items(), key=key):
         if args.top in path.parents or args.top == path:
             end = "/" if path.is_dir() and not path.as_posix().endswith("/") else ""
             table.append(
